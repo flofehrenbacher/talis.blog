@@ -5,6 +5,8 @@ export default function Home() {
         autoPlay
         loop
         muted
+        playsInline
+        poster="https://d26if1huzogbvq.cloudfront.net/episode-1-poster.jpg"
         className="fixed w-auto min-w-full min-h-full max-w-none"
       >
         <source
