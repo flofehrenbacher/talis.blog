@@ -1,8 +1,11 @@
-// import './globals.css'
+import "./globals.css";
+
+const title = "Talis Blog";
+const description = "Jan und Flo unterwegs auf der Ostsee im Sommer 2023";
 
 export const metadata = {
-  title: "Talis Blog",
-  description: "Jan und Flo auf der Ostsee",
+  title,
+  description,
 };
 
 export default function RootLayout({
@@ -13,30 +16,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>My test page</title>
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `
-      html {
-        height: 100%;
-      }
-
-      body {
-        background: azure;
-        font-family: Arial, Helvetica, sans-serif;
-        display: grid;
-        place-items: center;
-        height: 100%;
-      }
-
-      .container {
-        display: grid;
-        place-items: center;
-      }
-    
-    `,
-          }}
-        ></style>
+        <title>Talis Blog</title>
+        <meta name="description" content={description} />
       </head>
       <body>{children}</body>
     </html>
