@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { PageTitle } from "./components/page-title";
+
 export default function Home() {
   return (
     <header className="relative grid place-content-center h-screen overflow-hidden">
@@ -16,11 +19,14 @@ export default function Home() {
         Your browser does not support the video tag.
       </video>
       <div className="relative flex flex-col gap-4 items-center text-white p-10 bg-slate-800 bg-opacity-50">
-        <h1 className="text-2xl inline border-cyan-600 border-b-4">
-          Talis Blog
-        </h1>
+        <PageTitle>Talis Blog</PageTitle>
         <p>Alles über unsere Segel-Reise auf der Ostsee</p>
         <p>In Kürze mehr :)</p>
+        <ol className="list-disc">
+          <li>
+            <Link href="/post/1">Episode 1</Link>
+          </li>
+        </ol>
       </div>
     </header>
   );
